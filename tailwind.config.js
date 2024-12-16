@@ -5,7 +5,11 @@ export default {
     container: {
       center: true,
     },
-    extend: {},
+    extend: {
+      colors: {
+        primary: "#131313",
+      },
+    },
   },
   plugins: [require("daisyui")],
 };
