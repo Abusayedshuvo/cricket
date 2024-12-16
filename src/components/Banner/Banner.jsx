@@ -1,8 +1,10 @@
+import PropTypes from "prop-types";
+
 import bannerImg from "../../assets/banner-1.png";
 import shape1 from "../../assets/banner-shape1.png";
 import shape2 from "../../assets/banner-shape2.png";
 
-const Banner = () => {
+const Banner = ({ handleCoin }) => {
   return (
     <div className="text-center bg-[#131313] container max-w-[350px] md:max-w-[1320px] rounded-3xl py-16 relative   ">
       <div className="relative z-10">
@@ -13,7 +15,7 @@ const Banner = () => {
         <p className="text-white/70 2xl:text-2xl font-medium mb-8">
           Beyond Boundaries Beyond Limits
         </p>
-        <button className="button cursor-pointer" href="#">
+        <button onClick={handleCoin} className="button cursor-pointer" href="#">
           Claim Free Credit
         </button>
       </div>
@@ -29,6 +31,10 @@ const Banner = () => {
       />
     </div>
   );
+};
+
+Banner.propTypes = {
+  handleCoin: PropTypes.func,
 };
 
 export default Banner;

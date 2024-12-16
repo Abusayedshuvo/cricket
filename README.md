@@ -10,3 +10,18 @@ Here is the live Link
 - Tailwind CSS
 - Daisyui
 - React Icons
+- Prop-types
+
+# <img width="30px" src="assets/logo.png"/> BPL-DREAM 11
+
+This assignment involves building a React-based application where users can select and manage cricket players for a team, following the design from Figma. Handle player selection, coin limitations, and complete the system following the requirements written below:
+
+---
+
+### Navbar
+
+- Display the user's money in the Navbar, initially it will be 0.
+
+### Banner
+
+- Everytime On clicking the button, the user's coin will increase so that user can buy player.

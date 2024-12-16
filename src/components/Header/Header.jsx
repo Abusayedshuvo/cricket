@@ -1,7 +1,9 @@
+import PropTypes from "prop-types";
+
 import logo from "../../assets/logo.png";
 import dollar from "../../assets/dollar.png";
 
-const Header = () => {
+const Header = ({ coin }) => {
   const navs = (
     <>
       <li>
@@ -22,7 +24,7 @@ const Header = () => {
   return (
     <header>
       <div className="navbar bg-base-100 container max-w-[1320px] mt-2 2xl:mt-12 mb-4 2xl:mb-8">
-        <div className="navbar-start w-full lg:w-1/ justify-between lg:justify-start">
+        <div className="navbar-start w-full lg:w-1/2 justify-between lg:justify-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
               <svg
@@ -63,13 +65,17 @@ const Header = () => {
             {navs}
           </ul>
           <a className="btn">
-            <span>0 Coin</span>
+            <span> {coin} Coin</span>
             <img src={dollar} alt="" />
           </a>
         </div>
       </div>
     </header>
   );
+};
+
+Header.propTypes = {
+  coin: PropTypes.number,
 };
 
 export default Header;
