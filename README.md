@@ -12,8 +12,6 @@ Here is the live Link
 - React Icons
 - Prop-types
 
-# <img width="30px" src="assets/logo.png"/> BPL-DREAM 11
-
 This assignment involves building a React-based application where users can select and manage cricket players for a team, following the design from Figma. Handle player selection, coin limitations, and complete the system following the requirements written below:
 
 ---
@@ -25,3 +23,7 @@ This assignment involves building a React-based application where users can sele
 ### Banner
 
 - Everytime On clicking the button, the user's coin will increase so that user can buy player.
+
+### Player Data
+
+- Create a JSON file for 10-15 players, each having information like playerId, name, country, image, role, batting/bowling type, and bidding price.
