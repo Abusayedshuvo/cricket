@@ -1,14 +1,15 @@
 import logo from "../../assets/logo-footer.png";
-import button from "../../assets/button-2.png";
+import button2 from "../../assets/button-2.png";
+import button from "../../assets/button.png";
 
 const Footer = () => {
   return (
-    <div className="bg-[#06091A] pt-[240px] -mt-[240px]">
+    <div className="bg-[#06091A] pt-[240px] -mt-[240px] px-5 lg:px-0">
       <div className="text-center mt-8">
         <img className="mx-auto" src={logo} alt="" />
       </div>
       <div className="container max-w-[1320px] rounded-3xl py-16 ">
-        <div className="grid grid-cols-3">
+        <div className="grid grid-cols-1 2xl:grid-cols-3 gap-5">
           <div className="max-w-72">
             <p className="text-white text-lg mb-4 font-medium">About Us</p>
             <p className="text-white/60 ">
@@ -38,14 +39,15 @@ const Footer = () => {
             <p className="text-white/60 ">
               Subscribe to our newsletter for the latest updates.
             </p>
-            <div className="flex items-center mt-[20px]">
+            <div className="2xl:flex items-center mt-[20px]">
               <input
-                className="px-[30px] py-[14px] bg-white border border-primary/15 rounded-[12px] h-12 rounded-r-none"
+                className="px-4 2xl:px-[30px] py-[14px] bg-white border border-primary/15 rounded-[12px] h-12 2xl:rounded-r-none w-full lg:w-auto"
                 type="text"
                 placeholder="Enter your email"
               />
-              <button className="-ml-1">
-                <img src={button} alt="" />
+              <button className="-ml-1 mt-3 lg:mt-0">
+                <img className="hidden md:inline-block" src={button2} alt="" />
+                <img className="inline-block md:hidden" src={button} alt="" />
               </button>
             </div>
           </div>

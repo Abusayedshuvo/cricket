@@ -21,8 +21,8 @@ const Header = () => {
 
   return (
     <header>
-      <div className="navbar bg-base-100 container max-w-[1320px] mt-12 mb-8">
-        <div className="navbar-start">
+      <div className="navbar bg-base-100 container max-w-[1320px] mt-2 2xl:mt-12 mb-4 2xl:mb-8">
+        <div className="navbar-start w-full lg:w-1/ justify-between lg:justify-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
               <svg
