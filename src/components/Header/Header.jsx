@@ -64,10 +64,10 @@ const Header = ({ coin }) => {
           <ul className="menu menu-horizontal px-1 text-base text-[#131313]/70">
             {navs}
           </ul>
-          <a className="btn">
+          <span className="btn">
             <span> {coin} Coin</span>
             <img src={dollar} alt="" />
-          </a>
+          </span>
         </div>
       </div>
     </header>

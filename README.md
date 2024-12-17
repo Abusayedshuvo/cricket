@@ -11,6 +11,7 @@ Here is the live Link
 - Daisyui
 - React Icons
 - Prop-types
+- React-Toastify
 
 This assignment involves building a React-based application where users can select and manage cricket players for a team, following the design from Figma. Handle player selection, coin limitations, and complete the system following the requirements written below:
 
@@ -26,4 +27,10 @@ This assignment involves building a React-based application where users can sele
 
 ### Player Data
 
-- Create a JSON file for 10-15 players, each having information like playerId, name, country, image, role, batting/bowling type, and bidding price.
+- Create a JSON file for 15 players, each having information like playerId, name, country, image, role, batting/bowling type, and bidding price.
+
+### Choose Player Functionality
+
+- on Click "Choose Player" button , check if user have available coin or not.
+- show an alert if user dont have available coin.
+- Otherwise, add the player to the selected players list.

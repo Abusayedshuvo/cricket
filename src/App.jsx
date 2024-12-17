@@ -15,7 +15,7 @@ function App() {
       <Header coin={coin}></Header>
       <main>
         <Banner handleCoin={handleCoin}></Banner>
-        <Players></Players>
+        <Players coin={coin}></Players>
         <Subscribe></Subscribe>
         <Footer></Footer>
       </main>

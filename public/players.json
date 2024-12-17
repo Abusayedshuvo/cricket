@@ -1,37 +1,37 @@
 {
   "players": [
     {
-      "playerId": 1,
+      "id": 1,
       "name": "Virat Kohli",
       "country": "India",
-      "image": "./placeholder.jpg",
+      "image": "./virat.jpg",
       "role": "Batsman",
       "battingType": "Right-hand bat",
       "bowlingType": "Right-arm medium",
       "biddingPrice": "2.4M USD"
     },
     {
-      "playerId": 2,
+      "id": 2,
       "name": "Steve Smith",
       "country": "Australia",
-      "image": "./placeholder.jpg",
+      "image": "./steve.jpg",
       "role": "Batsman",
       "battingType": "Right-hand bat",
       "bowlingType": "Right-arm leg spin",
       "biddingPrice": "1.8M USD"
     },
     {
-      "playerId": 3,
+      "id": 3,
       "name": "Kane Williamson",
       "country": "New Zealand",
-      "image": "./placeholder.jpg",
+      "image": "./kane.jpg",
       "role": "Batsman",
       "battingType": "Right-hand bat",
       "bowlingType": "Right-arm off spin",
       "biddingPrice": "1.5M USD"
     },
     {
-      "playerId": 4,
+      "id": 4,
       "name": "Jasprit Bumrah",
       "country": "India",
       "image": "./placeholder.jpg",
@@ -41,7 +41,7 @@
       "biddingPrice": "2.0M USD"
     },
     {
-      "playerId": 5,
+      "id": 5,
       "name": "Pat Cummins",
       "country": "Australia",
       "image": "./placeholder.jpg",
@@ -51,7 +51,7 @@
       "biddingPrice": "1.9M USD"
     },
     {
-      "playerId": 6,
+      "id": 6,
       "name": "Ben Stokes",
       "country": "England",
       "image": "./placeholder.jpg",
@@ -61,7 +61,7 @@
       "biddingPrice": "2.3M USD"
     },
     {
-      "playerId": 7,
+      "id": 7,
       "name": "Rashid Khan",
       "country": "Afghanistan",
       "image": "./placeholder.jpg",
@@ -71,7 +71,7 @@
       "biddingPrice": "1.6M USD"
     },
     {
-      "playerId": 8,
+      "id": 8,
       "name": "Quinton de Kock",
       "country": "South Africa",
       "image": "./placeholder.jpg",
@@ -81,7 +81,7 @@
       "biddingPrice": "1.7M USD"
     },
     {
-      "playerId": 9,
+      "id": 9,
       "name": "Andre Russell",
       "country": "West Indies",
       "image": "./placeholder.jpg",
@@ -91,7 +91,7 @@
       "biddingPrice": "2.2M USD"
     },
     {
-      "playerId": 10,
+      "id": 10,
       "name": "Babar Azam",
       "country": "Pakistan",
       "image": "./placeholder.jpg",
@@ -101,7 +101,7 @@
       "biddingPrice": "1.8M USD"
     },
     {
-      "playerId": 11,
+      "id": 11,
       "name": "Trent Boult",
       "country": "New Zealand",
       "image": "./placeholder.jpg",
@@ -111,7 +111,7 @@
       "biddingPrice": "1.7M USD"
     },
     {
-      "playerId": 12,
+      "id": 12,
       "name": "Moeen Ali",
       "country": "England",
       "image": "./placeholder.jpg",
@@ -121,7 +121,7 @@
       "biddingPrice": "1.4M USD"
     },
     {
-      "playerId": 13,
+      "id": 13,
       "name": "David Warner",
       "country": "Australia",
       "image": "./placeholder.jpg",
@@ -131,7 +131,7 @@
       "biddingPrice": "2.1M USD"
     },
     {
-      "playerId": 14,
+      "id": 14,
       "name": "Shakib Al Hasan",
       "country": "Bangladesh",
       "image": "./placeholder.jpg",
@@ -141,7 +141,7 @@
       "biddingPrice": "1.6M USD"
     },
     {
-      "playerId": 15,
+      "id": 15,
       "name": "AB de Villiers",
       "country": "South Africa",
       "image": "./placeholder.jpg",

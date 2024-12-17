@@ -1,12 +1,12 @@
 import PropTypes from "prop-types";
 import { FaFlag, FaUser } from "react-icons/fa6";
 
-const Player = ({ player }) => {
+const Player = ({ player, handleChoosePlayer }) => {
   const { name, country, image, role, battingType, bowlingType, biddingPrice } =
     player;
   return (
     <div className="border border-[#131313]/10 rounded-2xl p-6">
-      <img className="mx-auto" src={image} alt="" />
+      <img className="mx-auto rounded-2xl" src={image} alt="" />
       <p className="mt-6 font-semibold text-[20px] flex gap-4 items-center">
         <FaUser />
         <span> {name} </span>
@@ -32,7 +32,10 @@ const Player = ({ player }) => {
 
         <div className="flex justify-between items-center">
           <span className="font-bold">Price: {biddingPrice} </span>
-          <button className="bg-primary/10 px-4 py-2 rounded-lg text-sm">
+          <button
+            onClick={() => handleChoosePlayer(player)}
+            className="bg-primary/10 hover:bg-primary hover:text-white duration-500 px-4 py-2 rounded-lg text-sm"
+          >
             Choose Player
           </button>
         </div>
@@ -43,6 +46,7 @@ const Player = ({ player }) => {
 
 Player.propTypes = {
   player: PropTypes.object,
+  handleChoosePlayer: PropTypes.func,
 };
 
 export default Player;
