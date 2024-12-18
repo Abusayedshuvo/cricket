@@ -30,7 +30,14 @@ const Players = ({ coin }) => {
     const selected = document.getElementById(select);
     selected.classList.add("hidden");
 
-    event.target.classList.toggle("active");
+    const buttons = document.querySelectorAll(".player-btn");
+    buttons.forEach((button) => button.classList.remove("active"));
+    event.target.classList.add("active");
+  };
+
+  const handleRemove = (id) => {
+    const players = selectedPlayers.filter((player) => player.id !== id);
+    setSelectedPlayers(players);
   };
 
   return (
@@ -40,13 +47,13 @@ const Players = ({ coin }) => {
         <div>
           <button
             onClick={() => handleAvailable("available", "selected", event)}
-            className="bg-[#E7FE29] py-4 px-8 border border-[#131313]/10 rounded-xl rounded-r-none font-bold border-r-0 active"
+            className=" py-4 px-8 border border-[#131313]/10 rounded-xl rounded-r-none  border-r-0 player-btn active"
           >
             Available
           </button>
           <button
             onClick={() => handleAvailable("selected", "available", event)}
-            className="py-4 px-8 border border-[#131313]/10 border-l-0 rounded-xl rounded-l-none  "
+            className="py-4 px-8 border border-[#131313]/10 border-l-0 rounded-xl rounded-l-none player-btn "
           >
             Selected (<span>{selectedPlayers.length}</span>)
           </button>
@@ -66,7 +73,10 @@ const Players = ({ coin }) => {
         ))}
       </div>
       <div id="selected">
-        <SelectedPlayer selectedPlayers={selectedPlayers}></SelectedPlayer>
+        <SelectedPlayer
+          selectedPlayers={selectedPlayers}
+          handleRemove={handleRemove}
+        ></SelectedPlayer>
       </div>
       <ToastContainer />
     </div>

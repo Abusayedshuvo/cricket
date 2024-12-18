@@ -34,3 +34,11 @@ This assignment involves building a React-based application where users can sele
 - on Click "Choose Player" button , check if user have available coin or not.
 - show an alert if user dont have available coin.
 - Otherwise, add the player to the selected players list.
+
+### Challenges
+
+- **Use React-Toastify**:
+  Replace all alerts in the interface with `React-Toastify` for better user notifications.
+
+- **Implement Selected Player Remove Functionality**:
+  Add a "Remove" button to each selected player card. On click, the player should be removed from the selected players' section.
