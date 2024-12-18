@@ -17,10 +17,22 @@ const Players = ({ coin }) => {
   const handleChoosePlayer = (player) => {
     if (coin <= 0) {
       toast.warn("You have no coin !");
-    } else {
-      const newPlayer = [...selectedPlayers, player];
-      setSelectedPlayers(newPlayer);
+      return;
     }
+    for (let i of selectedPlayers) {
+      if (i.id === player.id) {
+        toast.warn("Player already selected!");
+        return;
+      }
+    }
+
+    if (selectedPlayers.length >= 6) {
+      toast.warn("You already selected player 6 !");
+      return;
+    }
+
+    const newPlayer = [...selectedPlayers, player];
+    setSelectedPlayers(newPlayer);
   };
 
   const handleAvailable = (avail, select, event) => {

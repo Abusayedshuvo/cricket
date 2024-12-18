@@ -42,3 +42,7 @@ This assignment involves building a React-based application where users can sele
 
 - **Implement Selected Player Remove Functionality**:
   Add a "Remove" button to each selected player card. On click, the player should be removed from the selected players' section.
+
+  - **Implement The Perfect Validation on Player selection**:
+    - on clicking choose, player, if player selected previously then show user an alert(player already selected) and terminate.
+    - if the selected player is already 6 then , show an alert and terminate
